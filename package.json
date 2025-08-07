@@ -1,6 +1,7 @@
 {
   "name": "vue-assignment",
-  "version": "0.0.0",
+  "homepage": "https://apaulgriddynamics.github.io/vue-assignment",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "engines": {
@@ -14,7 +15,8 @@
     "type-check": "vue-tsc --build",
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix",
-    "lint": "run-s lint:*"
+    "lint": "run-s lint:*",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "pinia": "^3.0.3",
@@ -30,6 +32,7 @@
     "eslint": "^9.31.0",
     "eslint-plugin-oxlint": "~1.8.0",
     "eslint-plugin-vue": "~10.3.0",
+    "gh-pages": "^6.3.0",
     "jiti": "^2.4.2",
     "npm-run-all2": "^8.0.4",
     "oxlint": "~1.8.0",
